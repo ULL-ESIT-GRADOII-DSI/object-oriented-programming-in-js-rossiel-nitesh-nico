@@ -32,14 +32,14 @@
     var resultado = (this.valor * 9/5) + 32;
     resultado = resultado.toFixed(2) + " Farenheit";
     return resultado;
-  }
+  };
     
   Celsius.prototype.toKelvin = function ()
   {
     var resultado = (this.valor * 1) + 273.15;
     resultado = resultado.toFixed(2) + " Kelvin";
     return resultado;
-  }
+  };
   
   function Farenheit(valor)
   {
@@ -54,14 +54,14 @@
     var resultado = (this.valor - 32) * 5/9;
     resultado = resultado.toFixed(2) + " Celsius";
     return resultado;
-  }
+  };
   
   Farenheit.prototype.toKelvin = function ()
   {
     var resultado = ((this.valor - 32) * 5/9) + 273.15;
     resultado  = resultado.toFixed(2)+" Kelvin";
     return resultado;
-  }
+  };
 
   function Kelvin(valor)
   {
@@ -76,14 +76,14 @@
     var resultado = (this.valor - 273.15);
     resultado = resultado.toFixed(2) + " Celsius";
     return resultado;
-  }
+  };
   
   Kelvin.prototype.toFarenheit = function ()
   {
     var resultado = ((this.valor - 273.15) * 9/5) + 3;
     resultado = resultado.toFixed(2) + " Farenheit";
     return resultado;
-  }
+  };
 
   function Metros(valor)
   {
@@ -98,7 +98,7 @@
     var resultado = (this.valor * 39.37);
     resultado = resultado.toFixed(2) + " Pulgadas";
     return resultado;
-  }
+  };
 
   function Pulgadas(valor)
   {
@@ -113,7 +113,7 @@
     var resultado = (this.valor / 39.37);
     resultado = resultado.toFixed(2) + " Metros";
     return resultado;
-  }
+  };
   
   exports.Temperatura = Temperatura;
   exports.Celsius = Celsius;
@@ -196,6 +196,6 @@
     }
     else
       elemento.innerHTML = "Introduzca un valor porfavor!";
-  }
+  };
   
 })(this);
