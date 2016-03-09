@@ -3,8 +3,13 @@
   
   function Medida(valor, tipo)  
   {
-  this.valor = valor;
-  this.tipo = tipo || "No type";
+    this.valor = valor;
+    this.tipo = tipo || "No type";
+    if (this.tipo == "No type")
+    {
+      var aux10 = valor.split(" ");
+      this.tipo = aux10[1]; 
+    }
     /* tipo es opcional. Debería admitir  new Medida("45.2 Km") */
     /* ademas de new Medida(45.2, "Km") */
   }
@@ -12,7 +17,7 @@
   
   function Temperatura(valor, tipo)
   {
-  Medida.call(this, valor, tipo);
+    Medida.call(this, valor, tipo);
     /* tipo es opcional. Debería admitir new Medida("45.2 F") */
   }
 
@@ -119,16 +124,16 @@
   exports.Celsius = Celsius;
   exports.Farenheit = Farenheit;
   exports.Kelvin = Kelvin;
-
+    
+  var auxiliar = XRegExp('^(\\s*) \n' +
+                         '(?<val> [-+]?[0-9]+(\\.[0-9]+)?(?:e[+-]?[0-9]+)?) (\\s*) # val \n' +
+                         '(?<tip> [cCfFkKmMpP]) (\\s*) # tip \n' +
+                         '(?      (to))? (\\s*) \n' +
+                         '(?<au> [cCfFkKmMpP]) (\\s*)$ # au \n','x');
+  
   exports.convertir = function() {
     var valor = document.getElementById('convert').value;
     var elemento  = document.getElementById('converted');
-    
-    var auxiliar = XRegExp('^(\\s*) \n' +
-                          '(?<val> [-+]?[0-9]+(\\.[0-9]+)?(?:e[+-]?[0-9]+)?) (\\s*) # val \n' +
-                          '(?<tip> [cCfFkKmMpP]) (\\s*) # tip \n' +
-                          '(?<to> (to))? (\\s*) # to \n' +
-                          '(?<au> [cCfFkKmMpP]) (\\s*)$ # au \n','x');
     
     valor = XRegExp.exec(valor, auxiliar);
 
