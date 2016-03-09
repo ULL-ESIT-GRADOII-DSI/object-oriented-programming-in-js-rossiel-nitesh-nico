@@ -37,8 +37,11 @@ h4 {
     font-weight: 500;
 }
 
-span {
+span.converted {
     color: green;
 }
 
+span.convertido {
+    color: red;
+}
 
