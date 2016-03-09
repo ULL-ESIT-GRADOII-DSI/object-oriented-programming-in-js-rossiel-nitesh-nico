@@ -17,6 +17,14 @@ footer a {
     text-decoration: none;
 }
 
+.col1{
+    text-align: left;
+}
+
+.col2{
+    text-align: right;
+}
+
 .app {
     margin-top: 10%;
 }
@@ -31,6 +39,6 @@ span {
 
 @media (max-width: 550px) {
     footer {
-        text-align: center;
+    
     }
 }
