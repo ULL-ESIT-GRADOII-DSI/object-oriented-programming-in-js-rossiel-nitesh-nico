@@ -200,7 +200,7 @@
       }
     }
     else
-      elemento.innerHTML = "Introduzca un valor porfavor!";
+      elemento.innerHTML = "Introduzca un valor por favor!";
   };
   
 })(this);
