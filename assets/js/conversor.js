@@ -120,11 +120,11 @@
   exports.Farenheit = Farenheit;
   exports.Kelvin = Kelvin;
     
-  var auxiliar = XRegExp('^(\\s*) \n' +
-                         '(?<val> [-+]?[0-9]+(\\.[0-9]+)?(?:e[+-]?[0-9]+)?) (\\s*) # val \n' +
-                         '(?<tip> [cCfFkKmMpP]) (\\s*) # tip \n' +
-                         '(?      (to))? (\\s*) \n' +
-                         '(?<au> [cCfFkKmMpP]) (\\s*)$ # au \n','x');
+  var auxiliar = new XRegExp('^(\\s*) \n' +
+                             '(?<val> [-+]?[0-9]+(\\.[0-9]+)?(?:e[+-]?[0-9]+)?) (\\s*) # val \n' +
+                             '(?<tip> [cCfFkKmMpP]) (\\s*) # tip \n' +
+                             '(?      (to))? (\\s*) \n' +
+                             '(?<au> [cCfFkKmMpP]) (\\s*)$ # au \n','x');
   
   exports.convertir = function() {
     var valor = document.getElementById('convert').value;
