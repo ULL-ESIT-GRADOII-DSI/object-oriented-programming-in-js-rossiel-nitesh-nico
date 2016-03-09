@@ -191,11 +191,13 @@
           }
           break
         default:
+          elemento.innerHTML = "";
           elemento2.innerHTML = "¡¡¡ERROR!!!";
           /* rellene este código */
       }
     }
     else
+      elemento.innerHTML = "";
       elemento2.innerHTML = "Introduzca un valor por favor!";
   };
   
