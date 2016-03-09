@@ -205,8 +205,10 @@
       }
     }
     else
+    {
       elemento.innerHTML = "";
       elemento2.innerHTML = "Introduzca un valor por favor!";
+    }
   };
   
 })(this);
