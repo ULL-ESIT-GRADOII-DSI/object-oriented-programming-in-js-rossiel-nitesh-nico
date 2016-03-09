@@ -7,7 +7,7 @@
     this.tipo = tipo || "No type";
     if (this.tipo == "No type")
     {
-      var aux10 = this.valor
+      string aux10 = this.valor
       aux10.split(" ");
       this.tipo = aux10[1]; 
     }
