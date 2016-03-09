@@ -134,6 +134,7 @@
   exports.convertir = function() {
     var valor = document.getElementById('convert').value;
     var elemento  = document.getElementById('converted');
+    var elemento2 = document.getElementById('convertido');
     
     valor = XRegExp.exec(valor, auxiliar);
 
@@ -195,12 +196,12 @@
           }
           break
         default:
-          elemento.innerHTML = "¡¡¡ERROR!!!";
+          elemento2.innerHTML = "¡¡¡ERROR!!!";
           /* rellene este código */
       }
     }
     else
-      elemento.innerHTML = "Introduzca un valor por favor!";
+      elemento2.innerHTML = "Introduzca un valor por favor!";
   };
   
 })(this);
