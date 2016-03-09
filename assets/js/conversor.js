@@ -147,10 +147,12 @@
           if (aux == 'f')
           {
             elemento.innerHTML = celsius.toFarenheit();
+            elemento2.innerHTML = "";
           }
           if (aux == 'k')
           {
             elemento.innerHTML = celsius.toKelvin();
+            elemento2.innerHTML = "";
           }
           break;
           
@@ -159,10 +161,12 @@
           if (aux == 'c')
           {
             elemento.innerHTML = farenheit.toCelsius();
+            elemento2.innerHTML = "";
           }
           if (aux == 'k')
           {
             elemento.innerHTML = farenheit.toKelvin();
+            elemento2.innerHTML = "";
           }
           break;
         case 'k':
@@ -170,10 +174,12 @@
           if (aux == 'c')  
           {
             elemento.innerHTML = kelvin.toCelsius();
+            elemento2.innerHTML = "";
           }
           if (aux == 'f')  
           {
             elemento.innerHTML = kelvin.toFarenheit();
+            elemento2.innerHTML = "";
           }
           break;
         case 'm':
@@ -181,6 +187,7 @@
           if (aux == 'p')
           {
             elemento.innerHTML = metros.toPulgadas();
+            elemento2.innerHTML = "";
           }
           break;
         case 'p':
@@ -188,6 +195,7 @@
           if (aux == 'm')
           {
             elemento.innerHTML = pulgadas.toMetros();
+            elemento2.innerHTML = "";
           }
           break
         default:
