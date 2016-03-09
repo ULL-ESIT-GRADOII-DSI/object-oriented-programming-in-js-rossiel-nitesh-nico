@@ -126,10 +126,10 @@
     var elemento2 = document.getElementById('convertido');
     
     var auxiliar = XRegExp('^(\\s*) \n' +
-                             '(?<val> [-+]?[0-9]+(\\.[0-9]+)?(?:e[+-]?[0-9]+)?) (\\s*) # val \n' +
-                             '(?<tip> [cCfFkKmMpP]) (\\s*) # tip \n' +
-                             '(?<to>  (to))? (\\s*) # to \n' +
-                             '(?<au> [cCfFkKmMpP]) (\\s*)$ # au \n','x');
+                            '(?<val> [-+]?[0-9]+(\\.[0-9]+)?(?:e[+-]?[0-9]+)?) (\\s*) # val \n' +
+                            '(?<tip> [cCfFkKmMpP]) (\\s*) # tip \n' +
+                            '(?<to> (to))? (\\s*) # to \n' +
+                            '(?<au> [cCfFkKmMpP]) (\\s*)$ # au \n','x');
     
     valor = XRegExp.exec(valor, auxiliar);
 
