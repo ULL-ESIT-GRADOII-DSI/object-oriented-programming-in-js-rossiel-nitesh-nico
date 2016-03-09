@@ -18,11 +18,15 @@ footer a {
 }
 
 .col1{
-    text-align: right;
+    text-align: left;
 }
 
 .col2{
-    text-align: center;
+    text-align: left;
+}
+
+.col3{
+    text-align: right;
 }
 
 .app {
