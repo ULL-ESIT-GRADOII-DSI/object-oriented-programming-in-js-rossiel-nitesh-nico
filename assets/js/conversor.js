@@ -125,7 +125,7 @@
     var elemento  = document.getElementById('converted');
     var elemento2 = document.getElementById('convertido');
     
-    var auxiliar = new XRegExp('^(\\s*) \n' +
+    var auxiliar = XRegExp('^(\\s*) \n' +
                              '(?<val> [-+]?[0-9]+(\\.[0-9]+)?(?:e[+-]?[0-9]+)?) (\\s*) # val \n' +
                              '(?<tip> [cCfFkKmMpP]) (\\s*) # tip \n' +
                              '(?      (to))? (\\s*) \n' +
