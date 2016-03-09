@@ -7,7 +7,7 @@
     this.tipo = tipo || "No type";
     if (this.tipo == "No type")
     {
-      var aux10 = valor.split(" ");
+      var aux10 = this.valor.split(" ");
       this.tipo = aux10[1]; 
     }
     /* tipo es opcional. Debería admitir  new Medida("45.2 Km") */
